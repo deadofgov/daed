@@ -18,10 +18,13 @@ jobs:
       - run: |
           git fetch --prune --unshallow --tags
 
-      - name: Create changelogs
-        id: changelogs
-        uses: heineiuo/create-changelogs@master
+      - name: conventional changelog action
+        id: gen-changelog
+        uses: TriPSs/conventional-changelog-action@latest
+        with:
+          github-token: '${{ secrets.GH_TOKEN }}'
 
       - name: Print result
         run: |
-          echo ${{ steps.changelogs.outputs.changelogs }}
+          echo ${{ steps.gen-changelog.outputs.clean_changelog }} > changelogs.txt
+          cat changelogs.txt
