@@ -60,7 +60,7 @@ jobs:
 
       - name: Build
         run: |
-          pnpm install
+          pnpm install -P
           pnpm build
 
       - name: Upload artifact - web

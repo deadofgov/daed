@@ -41,7 +41,7 @@ ifeq (,$(wildcard ./.git))
 	PFLAGS += HUSKY=0
 endif
 dist: package.json pnpm-lock.yaml
-	$(PFLAGS) pnpm i
+	$(PFLAGS) pnpm install -P
 	pnpm build
 ## End Web
 

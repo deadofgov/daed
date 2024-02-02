@@ -4,13 +4,11 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - "main"
+      - 'main'
   release:
-    types: [prereleased,released]
-
+    types: [prereleased, released]
 
 jobs:
-
   build-web:
     runs-on: ubuntu-latest
     steps:
@@ -29,7 +27,7 @@ jobs:
 
       - name: Build
         run: |
-          pnpm install
+          pnpm install -P
           pnpm build
 
       - name: Upload artifact - web
@@ -37,7 +35,6 @@ jobs:
         with:
           name: web
           path: dist
-
 
   publish-docker-image:
     runs-on: ubuntu-latest

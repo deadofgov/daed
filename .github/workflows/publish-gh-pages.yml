@@ -22,7 +22,7 @@ jobs:
 
       - name: build
         run: |
-          pnpm install
+          pnpm install -P
           pnpm build
 
       - name: Publish Github Pages
