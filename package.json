@@ -49,7 +49,7 @@
     "@monaco-editor/react": "^4.6.0",
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/react": "^0.7.3",
-    "@parcel/watcher": "^2.5.0",
+    "@parcel/watcher": "^2.5.1",
     "@tabler/icons-react": "^2.47.0",
     "@tanstack/eslint-plugin-query": "^5.60.1",
     "@tanstack/react-query": "^4.36.1",
