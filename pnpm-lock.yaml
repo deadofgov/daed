@@ -183,8 +183,8 @@ importers:
         specifier: ^8.0.1
         version: 8.0.1
       framer-motion:
-        specifier: ^10.18.0
-        version: 10.18.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^12.23.12
+        version: 12.23.12(@emotion/is-prop-valid@0.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       graphiql:
         specifier: ^3.7.2
         version: 3.7.2(@codemirror/language@6.0.0)(@types/node@20.17.6)(@types/react-dom@18.3.1)(@types/react@18.3.12)(graphql-ws@5.16.0(graphql@16.9.0))(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -557,11 +557,11 @@ packages:
   '@codemirror/language@6.0.0':
     resolution: {integrity: sha512-rtjk5ifyMzOna1c7PBu7J1VCt0PvA5wy3o8eMVnxMKb7z8KA7JFecvD04dSn14vj/bBaAbqRsGed5OjtofEnLA==}
 
-  '@codemirror/state@6.4.1':
-    resolution: {integrity: sha512-QkEyUiLhsJoZkbumGZlswmAhA7CBU02Wrz7zvH4SrcifbsqwlXShVXg65f3v/ts57W3dqyamEriMhij1Z3Zz4A==}
+  '@codemirror/state@6.5.2':
+    resolution: {integrity: sha512-FVqsPqtPWKVVL3dPSxy8wEF/ymIEuVzF1PK3VbUgrxXpJUSHQWWZz4JMToquRxnkw+36LTamCZG2iua2Ptq0fA==}
 
-  '@codemirror/view@6.34.2':
-    resolution: {integrity: sha512-d6n0WFvL970A9Z+l9N2dO+Hk9ev4hDYQzIx+B9tCyBP0W5wPEszi1rhuyFesNSkLZzXbQE5FPH7F/z/TMJfoPA==}
+  '@codemirror/view@6.38.1':
+    resolution: {integrity: sha512-RmTOkE7hRU3OVREqFVITWHz6ocgBjv08GoePscAakgVQfciA3SGCEk7mb9IzwW61cKKmlTpHXG6DUE5Ubx+MGQ==}
 
   '@commitlint/cli@18.6.1':
     resolution: {integrity: sha512-5IDE0a+lWGdkOvKH892HHAZgbAjcj1mT5QrfA/SVbLJV/BbBMGyKN0W5mhgjekPJJwEQdVNvhl9PwUacY58Usw==}
@@ -1310,6 +1310,9 @@ packages:
     resolution: {integrity: sha512-RSKlNZvxhMCkOFZ6slbYvZYbWjHUM+PxDQnupIOxIdsTZQQjx/BFfrfJ7kQFOP+g7MtpOds8weAetEs5obwMOQ==}
     peerDependencies:
       react: '>=16.8.0'
+
+  '@marijn/find-cluster-break@1.0.2':
+    resolution: {integrity: sha512-l0h88YhZFyKdXIFNfSWpyjStDjGHwZ/U7iobcK1cQQD8sejsONdQtTVU+1wVN1PBw40PiiHB1vA5S7VTfQiP9g==}
 
   '@monaco-editor/loader@1.4.0':
     resolution: {integrity: sha512-00ioBig0x642hytVspPl7DbQyaSWRaolYie/UFNjoTdvoKPzo6xrXLhTk9ixgIKcLH5b5vDOjVNiGyY+uDCUlg==}
@@ -3141,12 +3144,15 @@ packages:
   for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
 
-  framer-motion@10.18.0:
-    resolution: {integrity: sha512-oGlDh1Q1XqYPksuTD/usb0I70hq95OUzmL9+6Zd+Hs4XV0oaISBa/UUMSjYiq6m8EUF32132mOJ8xVZS+I0S6w==}
+  framer-motion@12.23.12:
+    resolution: {integrity: sha512-6e78rdVtnBvlEVgu6eFEAgG9v3wLnYEboM8I5O5EXvfKC8gxGQB8wXJdhkMy10iVcn05jl6CNw7/HTsTCfwcWg==}
     peerDependencies:
-      react: ^18.0.0
-      react-dom: ^18.0.0
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
       react:
         optional: true
       react-dom:
@@ -3944,6 +3950,12 @@ packages:
 
   monaco-themes@0.4.4:
     resolution: {integrity: sha512-Hbb9pvRrpSi0rZezcB/IOdQnpx10o55Lx4zFdRAAVpFMa1HP7FgaqEZdKffb4ovd90fETCixeFO9JPYFMAq+TQ==}
+
+  motion-dom@12.23.12:
+    resolution: {integrity: sha512-RcR4fvMCTESQBD/uKQe49D5RUeDOokkGRmz4ceaJKDBgHYtZtntC/s2vLvY38gqGaytinij/yi3hMcWVcEF5Kw==}
+
+  motion-utils@12.23.6:
+    resolution: {integrity: sha512-eAWoPgr4eFEOFfg2WjIsMoqJTW6Z8MTUCgn/GZ3VRpClWBdnbjryiA3ZSNLyxCTmCQx4RmYX6jX1iWHbenUPNQ==}
 
   mrmime@2.0.0:
     resolution: {integrity: sha512-eu38+hdgojoyq63s+yTpN4XMBdt5l8HhMhc4VKLO9KM5caLIBvUm4thi7fFaxyTmCKeNnXZ5pAlBwCUnhA09uw==}
@@ -5592,18 +5604,21 @@ snapshots:
 
   '@codemirror/language@6.0.0':
     dependencies:
-      '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.34.2
+      '@codemirror/state': 6.5.2
+      '@codemirror/view': 6.38.1
       '@lezer/common': 1.2.3
       '@lezer/highlight': 1.2.1
       '@lezer/lr': 1.4.2
       style-mod: 4.1.2
 
-  '@codemirror/state@6.4.1': {}
-
-  '@codemirror/view@6.34.2':
+  '@codemirror/state@6.5.2':
     dependencies:
-      '@codemirror/state': 6.4.1
+      '@marijn/find-cluster-break': 1.0.2
+
+  '@codemirror/view@6.38.1':
+    dependencies:
+      '@codemirror/state': 6.5.2
+      crelt: 1.0.6
       style-mod: 4.1.2
       w3c-keyname: 2.2.8
 
@@ -6382,7 +6397,7 @@ snapshots:
   '@graphql-tools/optimize@2.0.0(graphql@16.9.0)':
     dependencies:
       graphql: 16.9.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/prisma-loader@8.0.16(@types/node@20.17.6)(graphql@16.9.0)':
     dependencies:
@@ -6415,7 +6430,7 @@ snapshots:
       '@ardatan/relay-compiler': 12.0.0(graphql@16.9.0)
       '@graphql-tools/utils': 10.5.5(graphql@16.9.0)
       graphql: 16.9.0
-      tslib: 2.6.3
+      tslib: 2.8.1
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -6643,6 +6658,8 @@ snapshots:
   '@mantine/utils@6.0.22(react@18.3.1)':
     dependencies:
       react: 18.3.1
+
+  '@marijn/find-cluster-break@1.0.2': {}
 
   '@monaco-editor/loader@1.4.0(monaco-editor@0.44.0)':
     dependencies:
@@ -8752,8 +8769,10 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  framer-motion@10.18.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  framer-motion@12.23.12(@emotion/is-prop-valid@0.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
+      motion-dom: 12.23.12
+      motion-utils: 12.23.6
       tslib: 2.8.1
     optionalDependencies:
       '@emotion/is-prop-valid': 0.8.8
@@ -8950,7 +8969,7 @@ snapshots:
   graphql-tag@2.12.6(graphql@16.9.0):
     dependencies:
       graphql: 16.9.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   graphql-ws@5.16.0(graphql@16.9.0):
     dependencies:
@@ -9540,6 +9559,12 @@ snapshots:
   monaco-themes@0.4.4:
     dependencies:
       fast-plist: 0.1.3
+
+  motion-dom@12.23.12:
+    dependencies:
+      motion-utils: 12.23.6
+
+  motion-utils@12.23.6: {}
 
   mrmime@2.0.0: {}
 
