@@ -48,7 +48,7 @@
     "@mantine/tiptap": "^6.0.22",
     "@monaco-editor/react": "^4.6.0",
     "@nanostores/persistent": "^0.9.1",
-    "@nanostores/react": "^0.7.3",
+    "@nanostores/react": "^1.0.0",
     "@parcel/watcher": "^2.5.0",
     "@tabler/icons-react": "^2.47.0",
     "@tanstack/eslint-plugin-query": "^5.60.1",
